@@ -10,6 +10,10 @@
 		/>
 		<script src="/js/script.js" defer></script>
 		<link rel="stylesheet" href="/css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Libre+Baskerville&family=Merriweather&display=swap");
 		</style>
@@ -20,8 +24,8 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="top-nav">
-				<div class="top-nav_hamburger">
+			<div class="inner">
+				<div class="navbar">
 					<input class="menu-btn" type="checkbox" id="menu-btn" />
 					<label class="menu-icon" for="menu-btn">
 						<span class="nav-icon"></span>
@@ -30,157 +34,218 @@
 						<li><a href="/category.html">CATEGORY</a></li>
 						<li><a href="/blog.html">BLOG</a></li>
 						<li><a href="/contact.html">CONTACT</a></li>
+						<li><a href="/about.html">ABOUT US</a></li>
 					</ul>
 				</div>
 			</div>
-			<!--
-                <div class="search">
-                    <div class="search_icon">
-                        <img
-                            class="search_icon"
-                            src="https://img.icons8.com/material-outlined/344/search--v1.png"
-                            alt="search icon"
-                        />
-                    </div>
-                </div>
-                -->
 		</header>
+		<main>
+			<div class="logo">
+				<div class="inner">
+					<img class="logo_img" src="/img/Logo.png" alt="logo" />
+				</div>
+			</div>
+			<div class="inner">
+				<div class="layout">
+					<div class="layout_content">
+						<section class="new-content">
+							<div class="new-content_head">
+								<h1>Last Post</h1>
+								<a href="/specific.html">
+									<h2 class="new-content_text">Salmon and Quinoa Dish</h2>
+								</a>
+								<p class="new-content_intro">
+									Mediterranean salmon and vegetable quinoa recipe is a healthy
+									protein-packed meal! Earthy spices roasted lemons and fresh
+									vegetables in each bite.
+								</p>
+							</div>
+							<div class="outline_1">
+								<img
+									class="new-content_img"
+									src="/img/hero.jpeg"
+									alt="salmon and quinoa dish on plater"
+								/>
+								<div class="new-content_cta">
+									<a href="/specific.html">
+										<p>TO THE RECIPE > > ></p>
+									</a>
+								</div>
+							</div>
+						</section>
+						<section class="more-content">
+							<div class="outline_2">
+								<h2 class="more-content_h2">More Recipies</h2>
+								<div class="carousel" data-carousel>
+									<button
+										class="carousel-button prev"
+										data-carousel-button="prev"
+									>
+										&#60;
+									</button>
+									<button
+										class="carousel-button next"
+										data-carousel-button="next"
+									>
+										&#62;
+									</button>
+									<ul data-slides>
+										<li class="slide">
+											<img src="/img/smoothie.jpeg" alt="food plater" />
+											<h2>Fresh Smoothie</h2>
+											<p>
+												packed full of healthy fruit and veggies that will help
+												you start the morning off with a good dose of vitamins
+												and minerals.
+											</p>
+										</li>
+										<li class="slide">
+											<img src="/img/toast.jpeg" alt="food plater" />
+											<h2>Avocado egg toast</h2>
+											<p>
+												Quick and easy – fried, scrambled, boiled and poached.
+												It’s a simple healthy protein-packed breakfast, snack or
+												light meal!
+											</p>
+										</li>
+										<li class="slide">
+											<img src="/img/tandori.jpeg" alt="food plater" />
+											<h2>Tandori Salmon</h2>
+											<p>
+												Indian-twist by simply marinating in a gorgeous mix of
+												smoky paprika, fiery chilli, fresh coriander, zesty
+												lemon, and fragrant garam masala.
+											</p>
+										</li>
+										<li class="slide">
+											<img src="/img/mediterranean.jpeg" alt="food plater" />
+											<h2>Mediterranean</h2>
+											<p>
+												Salmon and vegetable quinoa recipe is a healthy
+												protein-packed meal! Earthy spices roasted lemons and
+												fresh vegetables in each bite.
+											</p>
+										</li>
+										<li class="slide">
+											<img src="/img/3course.jpeg" alt="food plater" />
+											<h2>3-Course Meal</h2>
+											<p>
+												Surprise your friends with this tasty 3-course mela.
+												Baked Bread, chicken bowl and Beef stew
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section class="about">
+							<div class="about_outline">
+								<div class="about_slogan">
+									<h2 class="about_slogan-text">
+										A food blog with <br />
+										fresh and tasty recipes
+									</h2>
+								</div>
+								<div class="about_content">
+									<img
+										class="about_content-img"
+										src="/img/couple.jpeg"
+										alt="Rachel and Jack cooking in the Kitchen"
+									/>
+									<h2>Welcome to the Green´s Kitchen</h2>
+									<p>
+										We are Rachel and Jack Green. We love to eat, cook and
+										travel. We worked as chefs for 10 years and want to give you
+										easy too cook recipes you can make at home, brining the
+										restaurant feeling home too you!
+									</p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="inner">
+				<div class="footer_content">
+					<div class="footer_content-navigation">
+						<div class="footer_sitemap">
+							<h2>Site Map</h2>
+							<hr />
+							<ul>
+								<li><a href="/blog.html" class="sitemap_link">Blog</a></li>
+								<li>
+									<a href="/contact.html" class="sitemap_link">Contact</a>
+								</li>
+								<li><a href="/about.html" class="sitemap_link">About us</a></li>
+							</ul>
+						</div>
+						<div class="footer_category">
+							<h2>Category</h2>
+							<hr />
+							<ul>
+								<li>
+									<a href="/category.html" class="category_link">Dinner</a>
+								</li>
+								<li>
+									<a href="/category.html" class="category_link">Breakfast</a>
+								</li>
+								<li>
+									<a href="/category.html" class="category_link">Smoothie</a>
+								</li>
+								<li>
+									<a href="/category.html" class="category_link">Desserts</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer_social-media">
+						<h2>Connect with us</h2>
+						<div class="outline_4">
+							<hr />
+						</div>
+						<ul>
+							<li>
+								<a href="#">
+									<img
+										class="icon"
+										src="https://img.icons8.com/ios-glyphs/452/facebook-new.png"
+										alt="Facebook logo"
+									/>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img
+										class="icon"
+										src="https://img.icons8.com/ios-glyphs/452/instagram-new.png"
+										alt="Instagram logo"
+									/>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img
+										class="icon"
+										src="https://img.icons8.com/ios-filled/452/pinterest--v1.png"
+										alt="Pinterest logo"
+									/>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img
+										class="icon"
+										src="https://img.icons8.com/ios-filled/344/twitter-circled--v1.png"
+										alt="Twitter logo"
+									/>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
-	<main>
-		<div class="logo">
-			<div class="inner">
-				<img class="logo_img" src="/img/Logo.png" alt="logo" />
-			</div>
-		</div>
-		<section class="new-content">
-			<div class="inner">
-				<h1>Last Post</h1>
-				<a href="/specific.html">
-					<h2 class="new-content_text">Salmon and Quinoa Dish</h2>
-				</a>
-				<p class="new-content_intro">
-					Mediterranean salmon and vegetable quinoa recipe is a healthy
-					protein-packed meal! Earthy spices roasted lemons and fresh vegetables
-					in each bite.
-				</p>
-				<hr />
-				<div>
-					<img
-						class="new-content_img"
-						src="/img/hero.jpeg"
-						alt="salmon and quinoa dish on plater"
-					/>
-				</div>
-				<div class="new-content_cta">
-					<a href="/specific.html"><p>TO THE RECIPE > > ></p></a>
-				</div>
-				<hr />
-			</div>
-		</section>
-        <section class="more-content">
-            <div class="inner">
-                <h2>More Recipies</h2>
-                <section aria-label="Newest Photo">
-                    <div class="carousel">
-                        <button class="carousel-button prev">&#8656;</button>
-                        <button class="carousel-button next">&#8658;</button>
-                        <ul>
-                            <li class="slide">
-                                <img src="/img/smoothie.jpeg" alt="food plater">
-                            </li>
-                            <li class="slide">
-                                <img src="/img/toast.jpeg" alt="food plater">
-                            </li>
-                            <li class="slide">
-                                <img src="/img/tandori.jpeg" alt="food plater">
-                            </li>
-                            <li class="slide">
-                                <img src="/img/mediterranean.jpeg" alt="food plater">
-                            </li>
-                            <li class="slide">
-                                <img src="/img/3course.jpeg" alt="food plater">
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-        </section>
-	</main>
-	<footer class="footer">
-		<div class="inner">
-			<div class="footer_content">
-				<div class="footer_content-navigation">
-					<div class="footer_sitemap">
-						<h2>Site Map</h2>
-						<hr />
-						<ul>
-							<li><a href="/blog.html" class="sitemap_link">Blog</a></li>
-							<li><a href="/contact.html" class="sitemap_link">Contact</a></li>
-							<li><a href="/about.html" class="sitemap_link">About us</a></li>
-						</ul>
-					</div>
-					<div class="footer_category">
-						<h2>Category</h2>
-						<hr />
-						<ul>
-							<li><a href="/category.html" class="category_link">Dinner</a></li>
-							<li>
-								<a href="/category.html" class="category_link">Breakfast</a>
-							</li>
-							<li>
-								<a href="/category.html" class="category_link">Smoothie</a>
-							</li>
-							<li>
-								<a href="/category.html" class="category_link">Desserts</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer_social-media">
-					<h2>Connect with us</h2>
-					<div class="line">
-						<hr />
-					</div>
-					<ul>
-						<li>
-							<a href="#">
-								<img
-									class="icon"
-									src="https://img.icons8.com/ios-glyphs/452/facebook-new.png"
-									alt="Facebook logo"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img
-									class="icon"
-									src="https://img.icons8.com/ios-glyphs/452/instagram-new.png"
-									alt="Instagram logo"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img
-									class="icon"
-									src="https://img.icons8.com/ios-filled/452/pinterest--v1.png"
-									alt="Pinterest logo"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img
-									class="icon"
-									src="https://img.icons8.com/ios-filled/344/twitter-circled--v1.png"
-									alt="Twitter logo"
-								/>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
 </html>

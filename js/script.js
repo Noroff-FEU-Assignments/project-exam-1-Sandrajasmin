@@ -1,26 +1,19 @@
-$(document).ready(function(){
-    // Activate Carousel
-    $("#myCarousel").carousel({interval: 500, wrap: false});
-      
-    // Enable Carousel Indicators
-    $(".item1").click(function(){
-      $("#myCarousel").carousel(0);
-    });
-    $(".item2").click(function(){
-      $("#myCarousel").carousel(1);
-    });
-    $(".item3").click(function(){
-      $("#myCarousel").carousel(2);
-    });
-    $(".item4").click(function(){
-      $("#myCarousel").carousel(3);
-    });
-      
-    // Enable Carousel Controls
-    $(".left").click(function(){
-      $("#myCarousel").carousel("prev");
-    });
-    $(".right").click(function(){
-      $("#myCarousel").carousel("next");
-    });
-  });
+
+const buttons = document.querySelectorAll("[data-carousel-button]")
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const offset = button.dataset.carouselButton === "next" ? 1 : - 1
+    const slides = button
+      .closest("[data-carousel]")
+      .querySelector('[data-slides]')
+
+    const activeSlide = slides.querySelector("[data-active]")
+    let newIndex = [...slides.children].indexOf(activeSlide) + offset
+    if (newIndex < 0) newIndex = slides.children.length - 1
+    if (newIndex >= slides.children.length) newIndex = 0
+
+    slides.children[newIndex].dataset.active = true
+    delete activeSlide.dataset.active
+  })
+})
