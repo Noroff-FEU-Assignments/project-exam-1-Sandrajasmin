@@ -1,0 +1,162 @@
+@import url(/css/import/header.css);
+
+.contact {
+    border-top: 1px solid black;
+    padding-top: 45px;
+}
+
+.input-Control label {
+    font-family: 'Fira Sans Extra Condensed', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 29px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.input-Control {
+    margin-top: 15px;
+}
+
+#fname,
+#email,
+#subject {
+    border: 1px solid black;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    height: 55px;
+}
+
+#message {
+    height: 158px;
+    border: 1px solid black;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+}
+
+input[type='text'],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-family: 'Libre Baskerville', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8px;
+}
+
+input[type='submit'] {
+    font-family: 'Fira Sans Extra Condensed', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 29px;
+    background-color: #89D38E;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 224px;
+    height: 48px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    float: right;
+}
+
+.input-Control input:focus {
+    outline: 0;
+}
+
+.input-Control.success input {
+    border-color: darkseagreen;
+}
+
+.input-Control.error input {
+    border-color: brown;
+}
+
+.input-Control .error {
+    font-family: 'Mulish', sans-serif;
+    border-color: red;
+    color: red;
+    font-size: 9px;
+    margin-top: 5px;
+    max-width: 80px;
+}
+
+.help h2 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 50px 0 50px 0;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.contact_details h2 {
+    border-bottom: 1px solid black;
+    padding: 10px 0 50px 0;
+    margin: 50px 0 100px 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+    .layout-content {
+        display: flex;
+        flex-direction: row;
+        border-top: 1px solid black;
+        margin-bottom: 50px;
+    }
+
+    .contact {
+        width: 680px;
+        border-top: none;
+    }
+    .input-Control{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-Control label {
+        font-family: 'Fira Sans Extra Condensed', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 29px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    #fname,
+    #email,
+    #subject {
+        width: 433px;
+        height: 33px;
+    }
+
+    #message {
+        height: 263px;
+        width: 650px;
+    }
+
+    input[type='submit'] {
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+
+    .help_content, .contact_content{
+        width: 468px;
+    }
+
+    .help h2 {
+        border-top: none;
+        border-bottom: none;
+        padding: 0px;
+        margin: 70px 0 0 0;
+        
+    }
+    
+    .contact_details h2 {
+        border-top3: 1px solid black;
+        border-bottom: none;
+        margin: 70px 0 0 0;
+        padding: 70px 0 70px 0;
+    }
+
+    .info {
+        border-left: 1px solid black;
+    }
+
+}

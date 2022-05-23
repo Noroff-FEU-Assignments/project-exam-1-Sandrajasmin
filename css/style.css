@@ -19,9 +19,9 @@
 }
 
 .new-content_cta {
-    background-color: #89D38E;
+    background-color: #7cea83;
     height: 44px;
-    margin-top: 5px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -119,17 +119,6 @@
 }
 
 @media screen and (min-width: 767px) {
-    
-    .inner {
-        margin: 0% auto;
-        width: 1200px;
-    }
-
-    /* LOGO */
-
-    .logo_img {
-        margin-left: 50%;       
-    }
 
     /* LAYOUT */
 
@@ -175,7 +164,7 @@
 
     .about_content {
         align-items: center;
-        height: 539px;
+        height: 555px;
     }
 
     .about_slogan-text {

@@ -1,0 +1,62 @@
+@import url(/css/import/header.css);
+
+.herobanner {
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+.herobanner img {
+    width: 300px;
+}
+
+.flexbox {
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flexbox_img {
+    display: flex;
+    gap: 5px;
+}
+
+.flexbox img{
+    width: 100px;
+    height: 134px;
+}
+
+.flexbox h2 {
+    text-align: center;
+}
+
+.main_content p {
+    text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+    .herobanner img {
+        width: 100%;
+    }
+
+    .flexbox{
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .flexbox_img {
+        display: flex;
+        gap: 10px;
+    }
+
+    .flexbox img {
+        width: 224px;
+        height: 280px;
+        margin: 10px 0 10px 0;
+    }
+
+    .main_content p {
+        margin: 50px 0 50px 0;
+    }
+}
