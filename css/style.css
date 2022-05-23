@@ -11,6 +11,7 @@
 .outline_2 {
     border-bottom: 1px solid black;
     width: 300px;
+    padding-bottom: 20px;
 }
 
 .new-content_img {
@@ -57,7 +58,7 @@
     opacity: 0;
 }
 
-.slide>img {
+.slide a>img {
     display: block;
     width: 220px;
     height: 208px;

@@ -1,30 +1,29 @@
 const APIurl = "https://greenskitchen-afd1b0.ingress-daribow.easywp.com/wp-json/wp/v2/posts/"
 
 const lastPost = document.querySelector(".last-post")
-const moreContent = document.querySelector(".slide")
+const moreContent = document.querySelector(".carousel_arr")
 
 async function getPosts () {
   try {
     const response = await fetch(APIurl);
     const responseJSON = await response.json();
-    const blogInfo = responseJSON;
     console.log(responseJSON);
 
-    for (blog of blogInfo) {
-    for (image of blog.img){
-      moreContent.innerHTML += `
-                      <img src="/img/smoothie.jpeg" alt="food plater" />
-											<h2>Fresh Smoothie</h2>
-											<p>
-												packed full of healthy fruit and veggies that will help
-												you start the morning off with a good dose of vitamins
-												and minerals.
-											</p>
-      `
-    } 
-    }
-
-      
+    const myPostsArr = responseJSON;
+        for (let i = 0; i < myPostsArr.length; i++) {
+          console.log(myPostsArr[i]);
+            moreContent.innerHTML += `
+                                      <li class="slide">
+                                      <a 
+                                                href="specific.html?link=${myPostsArr[i].link}"
+                                                >
+                                      <img src='${myPostsArr[i].x_featured_media_large}' />
+										                	<h2>${myPostsArr[i].title.rendered}</h2>
+									              	    <p>${myPostsArr[i].acf.intro}</p>
+                                      </li>
+                                      </a>
+                                 `               
+  }   
   }
 
   catch (error) {
@@ -36,45 +35,6 @@ async function getPosts () {
 getPosts();
 
 
-// const queryString = document.location.search;
-
-// const params = new URLSearchParams(queryString);
-
-// const APIUrl = ``;
-
-// const blogDetails = document.querySelector(".last-post");
-
-// async function getBlogDetails() {
-//   try {
-//     const response = await fetch(APIUrl);
-//     const singleBlogDetail = await response.json();
-//     console.log('singleBlogDetail:', singleBlogDetail);
-//   } 
-  
-//   catch (error) {
-//     console.log(error);
-//   }
-// }
-// getBlogDetails();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
 buttons.forEach(button => {
@@ -83,7 +43,7 @@ buttons.forEach(button => {
      const slides = button
        .closest("[data-carousel]")
        .querySelector('[data-slides]')
-
+      
      const activeSlide = slides.querySelector("[data-active]")
      let newIndex = [...slides.children].indexOf(activeSlide) + offset
      if (newIndex < 0) newIndex = slides.children.length - 1
@@ -93,3 +53,4 @@ buttons.forEach(button => {
      delete activeSlide.dataset.active
    }) 
 })
+
