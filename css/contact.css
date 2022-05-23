@@ -41,7 +41,7 @@ textarea {
     box-sizing: border-box;
     margin-top: 10px;
     font-family: 'Libre Baskerville', Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 8px;
+    font-size: 12px;
 }
 
 input[type='submit'] {
@@ -75,9 +75,9 @@ input[type='submit'] {
     font-family: 'Mulish', sans-serif;
     border-color: red;
     color: red;
-    font-size: 9px;
+    font-size: 12px;
     margin-top: 5px;
-    max-width: 80px;
+    max-width: 300px;
 }
 
 .help h2 {
@@ -137,7 +137,11 @@ input[type='submit'] {
     }
 
     .help_content, .contact_content{
-        width: 468px;
+        width: 520px;
+    }
+
+    .help_content {
+        display: flex;
     }
 
     .help h2 {
@@ -149,7 +153,7 @@ input[type='submit'] {
     }
     
     .contact_details h2 {
-        border-top3: 1px solid black;
+        border-top: 1px solid black;
         border-bottom: none;
         margin: 70px 0 0 0;
         padding: 70px 0 70px 0;
