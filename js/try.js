@@ -1,76 +1,61 @@
-const APIurl = "https://greenskitchen-afd1b0.ingress-daribow.easywp.com/wp-json/wp/v2/posts?date"
+const APIUrl =
+  "https://gifted-signature.flywheelsites.com/wp-json/wp/v2/posts?per_page=10";
 
-const moreContent = document.querySelector(".slider")
+const blogContainer = document.querySelector(".blog-container");
 
-async function getPosts() {
-    try {
-        const response = await fetch(APIurl);
-        const responseJSON = await response.json();
-        console.log(responseJSON);
 
-        const myPostsArr = responseJSON;
+async function getBlogs() {
+  try {
+    const response = await fetch(APIUrl);
+    const blogData = await response.json();
+    blogContainer.innerHTML = "";
+    for (let i = 0; i < blogData.length; i++) {
+      let blogPicture = blogData[i].x_featured_media_original;
+      let altText = blogData[i].x_metadata.alt_text;
+      let blogName = blogData[i].acf.title;
+      let blogDescription = blogData[i].acf.paragraf;
+      let blogDate = blogData[i].x_date;
+      let author = blogData[i].x_author;
+      let blogPost = `
 
-        for (let i = 0; i < myPostsArr.length; i++) {
-            //console.log(myPostsArr[i]);
-            moreContent.innerHTML = `
-                                
-                                <div class="mySlides fade">
-                                    <a href="specific.html?id=${myPostsArr[0].id}"> 
-                                        <img class="item" src="${myPostsArr[0].x_featured_media_large}" alt=""> </a>
-                                        <div class="text">
-                                        <h2>${myPostsArr[0].title.rendered}</h2>
-                                        <p>${myPostsArr[0].x_metadata.intro}</p></div>
-                                    </a>
-                                </div>
-                                <div class="slide" style="background:dodgerBlue;">
-                                <a href="specific.html?id=${myPostsArr[i].id}"> 
-                                </div>
-                            `
-        }
+
+            `; blogContainer.innerHTML += blogPost;
     }
-    catch (error) {
-        console.log(error);
+  } catch (error) {
+    console.log("ops, there is an error", error);
+  }
+}
+
+getBlogs();
+
+const loadMore = document.getElementById("load-more");
+const ApiMore = "https://gifted-signature.flywheelsites.com/wp-json/wp/v2/posts?_page=2&offset=10";
+
+
+async function getMoreBlogs() {
+  try {
+    const response = await fetch(ApiMore);
+    const blogData = await response.json();
+
+    for (let i = 0; i < blogData.length; i++) {
+      let blogPicture = blogData[i].x_featured_media_original;
+      let altText = blogData[i].x_metadata.alt_text;
+      let blogName = blogData[i].acf.title;
+      let blogDescription = blogData[i].acf.paragraf;
+      let blogDate = blogData[i].x_date;
+      let author = blogData[i].x_author;
+      let blogPost = 
+      `
+ 
+            `; blogContainer.innerHTML += blogPost;
     }
+  } catch (error) {
+    console.log("ops, there is an error", error);
+  }
 }
 
-getPosts();
+getMoreBlogs();
 
-var slides = document.querySelectorAll(".slide");
-var dots = document.querySelectorAll(".dot");
-var index = 0;
-
-
-function prevSlide(n){
-  index+=n;
-  console.log("prevSlide is called");
-  changeSlide();
-}
-
-function nextSlide(n){
-  index+=n;
-  changeSlide();
-}
-
-changeSlide();
-
-function changeSlide(){
-
-  if(index>slides.length-1)
-    index=0;
-
-  if(index<0)
-    index=slides.length-1;
-
-
-
-    for(let i=0;i<slides.length;i++){
-      slides[i].style.display = "none";
-
-      dots[i].classList.remove("active");
-
-
-    }
-
-    slides[index].style.display = "block";
-    dots[index].classList.add("active");
-}
+loadMore.addEventListener("click", () => {
+  getMoreBlogs();
+});
