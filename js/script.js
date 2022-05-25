@@ -17,7 +17,7 @@ async function getPosts() {
                                 
                                 <div class="mySlides fade">
                                     <a href="specific.html?id=${myPostsArr[0].id}"> 
-                                        <img class="item" src="${myPostsArr[0].x_featured_media_large}" alt=""> </a>
+                                        <img class="item" src="${myPostsArr[0].x_featured_media_large}" alt=""> 
                                         <div class="text">
                                         <h2>${myPostsArr[0].title.rendered}</h2>
                                         <p>${myPostsArr[0].x_metadata.intro}</p></div>
@@ -26,7 +26,7 @@ async function getPosts() {
 
                                 <div class="mySlides fade">
                                     <a href="specific.html?id=${myPostsArr[1].id}"> 
-                                        <img class="item" src="${myPostsArr[1].x_featured_media_large}" alt=""> </a>
+                                        <img class="item" src="${myPostsArr[1].x_featured_media_large}" alt="">
                                         <div class="text">
                                         <h2>${myPostsArr[1].title.rendered}</h2>
                                         <p>${myPostsArr[1].x_metadata.intro}</p></div>
@@ -35,7 +35,7 @@ async function getPosts() {
 
                                 <div class="mySlides fade">
                                     <a href="specific.html?id=${myPostsArr[2].id}"> 
-                                        <img class="item" src="${myPostsArr[2].x_featured_media_large}" alt=""> </a>
+                                        <img class="item" src="${myPostsArr[2].x_featured_media_large}" alt="">
                                         <div class="text">
                                         <h2>${myPostsArr[2].title.rendered}</h2>
                                         <p>${myPostsArr[2].x_metadata.intro}</p></div>
@@ -44,7 +44,7 @@ async function getPosts() {
 
                                 <div class="mySlides fade">
                                     <a href="specific.html?id=${myPostsArr[3].id}"> 
-                                        <img class="item" src="${myPostsArr[3].x_featured_media_large}" alt=""> </a>
+                                        <img class="item" src="${myPostsArr[3].x_featured_media_large}" alt="">
                                         <div class="text">
                                         <h2>${myPostsArr[3].title.rendered}</h2>
                                         <p>${myPostsArr[3].x_metadata.intro}</p></div>
@@ -53,7 +53,7 @@ async function getPosts() {
 
                                 <div class="mySlides fade">
                                     <a href="specific.html?id=${myPostsArr[4].id}"> 
-                                        <img class="item" src="${myPostsArr[4].x_featured_media_large}" alt=""> </a>
+                                        <img class="item" src="${myPostsArr[4].x_featured_media_large}" alt="">
                                         <div class="text">
                                         <h2>${myPostsArr[4].title.rendered}</h2>
                                         <p>${myPostsArr[4].x_metadata.intro}</p></div>
@@ -62,7 +62,7 @@ async function getPosts() {
 
                                 <div class="mySlides fade">
                                     <a href="specific.html?id=${myPostsArr[5].id}"> 
-                                        <img class="item" src="${myPostsArr[5].x_featured_media_large}" alt=""> </a>
+                                        <img class="item" src="${myPostsArr[5].x_featured_media_large}" alt="">
                                         <div class="text">
                                         <h2>${myPostsArr[5].title.rendered}</h2>
                                         <p>${myPostsArr[5].x_metadata.intro}</p></div>
@@ -71,7 +71,7 @@ async function getPosts() {
 
                                 <div class="mySlides fade">
                                     <a href="specific.html?id=${myPostsArr[6].id}"> 
-                                        <img class="item" src="${myPostsArr[6].x_featured_media_large}" alt=""> </a>
+                                        <img class="item" src="${myPostsArr[6].x_featured_media_large}" alt="">
                                         <div class="text">
                                         <h2>${myPostsArr[6].title.rendered}</h2>
                                         <p>${myPostsArr[6].x_metadata.intro}</p></div>
@@ -80,7 +80,7 @@ async function getPosts() {
 
                                 <div class="mySlides fade">
                                     <a href="specific.html?id=${myPostsArr[7].id}"> 
-                                        <img class="item" src="${myPostsArr[7].x_featured_media_large}" alt=""> </a>
+                                        <img class="item" src="${myPostsArr[7].x_featured_media_large}" alt="">
                                         <div class="text">
                                         <h2>${myPostsArr[7].title.rendered}</h2>
                                         <p>${myPostsArr[7].x_metadata.intro}</p></div>
@@ -93,12 +93,13 @@ async function getPosts() {
                               <h1 class="latest_post">Most Read Post</h1>
                               <a href="specific.html?id=${myPostsArr[9].id}">
                                 <h2>${myPostsArr[9].title.rendered}</h2>
-                              </a>
+                              
                               <p class="new-content_intro">
                                 ${myPostsArr[9].x_metadata.intro}
                               </p>
+                              </a>
                               <div class="outline_1">
-                                <img class="new-content_img" src="${myPostsArr[9].x_featured_media_large}" alt=""> </a>
+                                <img class="new-content_img" src="${myPostsArr[9].x_featured_media_large}" alt="">
                               <div class="new-content_cta">
                                 <a href="specific.html?id=${myPostsArr[9].id}">
                                   <p>TO THE RECIPE > > ></p>
