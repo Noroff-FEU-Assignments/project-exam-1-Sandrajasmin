@@ -41,8 +41,6 @@ a:active {
 .inner {
   width: 300px;
   margin: 0% auto;
-  border: 1px solid salmon;
-
 }
 
 .nav-content {
@@ -204,10 +202,20 @@ a:active {
   height: 36px;
 }
 
-@media screen and (min-width: 767px) {
+/* TABLET */
+
+@media screen and (min-width: 481px) { 
+  .inner {
+      width: 600px;
+  }
+}
+
+/* SMALL SCREEN*/
+
+@media screen and (min-width: 769px) {
   .inner {
     margin: 0% auto;
-    width: 1200px;
+    width: 900px;  
   }
 
   .header li {
@@ -254,5 +262,16 @@ a:active {
   .footer_social-media {
     margin-bottom: 0px;
   }
+}
+
+/* BIG SCREEN*/
+
+@media screen and (min-width: 1025px) {
+  .inner {
+    margin: 0% auto;
+    width: 1200px;
+  }
+
+  
 }
 

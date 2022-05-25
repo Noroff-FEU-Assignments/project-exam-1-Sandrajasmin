@@ -8,8 +8,8 @@
 			name="description"
 			content="Cooking blog. Find easy and green recipes, easy to make at home"
 		/>
-		<script defer src="/js/specific.js"></script>
-		<link rel="stylesheet" href="/css/specific.css" />
+		<script defer src="/js/script.js"></script>
+		<link rel="stylesheet" href="/css/style.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -49,52 +49,49 @@
 					<div class="layout_content">
 						<section class="new-content">
 							<div class="new-content_head">
-								<h1>Last Post</h1>
 								<div class="last-post">
-									<a href="/specific.html">
-										<h2 class="new-content_text">Salmon and Quinoa Dish</h2>
-									</a>
-									<p class="new-content_intro">
-										Mediterranean salmon and vegetable quinoa recipe is a healthy
-										protein-packed meal! Earthy spices roasted lemons and fresh
-										vegetables in each bite.
-									</p>
-									<div class="outline_1">
-										<img
-											class="new-content_img"
-											src="/img/hero.jpeg"
-											alt="salmon and quinoa dish on plater"
-										/>
-										<div class="new-content_cta">
-											<a href="/specific.html">
-												<p>TO THE RECIPE > > ></p>
-											</a>
-										</div>
-									</div>
+									
 								</div>
 							</div>
 							
 						</section>
 						<section class="more-content">
 							<div class="outline_2">
-								<h2 class="more-content_h2">More Recipies</h2>
-								<div class="carousel" data-carousel>
-									<button
-										class="carousel-button prev"
-										data-carousel-button="prev"
-									>
-										&#60;
-									</button>
-									<button
-										class="carousel-button next"
-										data-carousel-button="next"
-									>
-										&#62;
-									</button>
-									<ul class="carousel_arr" data-slides>
-										
-									</ul>
-								</div>
+								<section>
+									<div id="wrapper_carousel">
+										<!-- WRAPPER-->
+										<h2>Latest Posts</h2>
+										<div id="carousel">
+											<div class="carousel_content"><!-- CONTENT--></div>
+										</div>
+										<button id="prev">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+											>
+												<path fill="none" d="M0 0h24v24H0V0z" />
+												<path
+													d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+												/>
+											</svg>
+										</button>
+										<button id="next">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+											>
+												<path fill="none" d="M0 0h24v24H0V0z" />
+												<path
+													d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+												/>
+											</svg>
+										</button>
+									</div>
+								</section>
 							</div>
 						</section>
 						<section class="about">

@@ -1,2 +1,119 @@
 @import url(/css/import/header.css);
 
+.main_content {
+    border-top: 1px solid black;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid black;
+}
+
+.main_container {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.content_container{
+    width: 145px;
+}
+
+.content_img {
+    width: 145px;
+    height: 166px;
+    object-fit: cover;
+}
+
+.content_title {
+    font-family: 'Libre Baskerville', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    width: 145px;
+}
+
+.content_text {
+    opacity: 0;
+    width: 145px;
+    height: 0px;
+}
+
+.cta_button {
+    background-color: #7cea83;
+    border: none;
+    width: 100%;
+    height: 44px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: start;
+}
+
+@media screen and (min-width: 481px) {
+
+    .content_container {
+        width: 160px;
+    }
+    
+    .content_img {
+        width: 160px;
+        height: 183px;
+    }
+
+    .content_title, .content_text {
+        width: 160px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+
+    .content_container {
+        width: 160px;
+    }
+    
+    .content_img {
+        width: 160px;
+        height: 183px;
+    }
+
+    .content_title, .content_text {
+        width: 160px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main_container {
+        justify-content: none;
+    }
+
+    .content_container {
+        width: 224px;
+    }
+
+    .content_img {
+        width: 224px;
+        height: 250px;
+    }
+
+    .content_container p {
+        width: 224px;
+        text-align: start;
+    }
+
+    .content_container h2 {
+        width: 224px;
+        font-family: 'Fira Sans Extra Condensed', Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 29px;
+        text-align: start;
+    }
+
+    .content_container p {
+        opacity: 1;
+        height: 100%;
+    }
+    
+    .cta_button {
+        padding-left: 10px;
+    }
+} 
