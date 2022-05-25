@@ -23,7 +23,7 @@ async function getContent() {
         const response = await fetch(APIurl);
         const blogContent = await response.json();
         let blogImgs = blogContent.x_featured_media_original;
-        //let altText = blogContent..x_metadata.alt_text; ADD ALT TEXT TO ALL PICTURES
+        let altText = blogContent.x_metadata.alt_text;
         let blogTitleText = blogContent.title.rendered;
         let blogIntroText = blogContent.acf.intro;
         let blogInstructionText = blogContent.x_metadata.instructions;
@@ -32,7 +32,7 @@ async function getContent() {
         blogTitle.innerHTML += `${blogTitleText}`
         blogIntro.innerHTML += `${blogIntroText}`
         blogImg.innerHTML += `
-                                <img class="main_img_1" src="${blogImgs}" alt="" />
+                                <img class="main_img_1" src="${blogImgs}" alt="${altText} />
                                     <div class="main_img_thumb">
                                         <img class="main_img_slide" src="/img/lemon.jpeg" alt="" /> 
                                         <img class="main_img_slide" src="/img/herbs.jpeg" alt="" />
