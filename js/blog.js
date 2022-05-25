@@ -17,7 +17,7 @@ async function getBlogPosts() {
       content.innerHTML += `
       <div class="content_container">
 							<a href="specific.html?id=${blogLink}">
-								<img class="content_img" src="${blogImgs}" alt="${altText}">
+								<img class="content_img" src="${blogImgs}" alt="">
 								<h2 class="content_title">${blogTitleText}</h2>
 								<p class="content_text">${blogIntroText}</p>
 							</a>
