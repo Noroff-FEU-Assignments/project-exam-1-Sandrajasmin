@@ -129,6 +129,7 @@
 /* TABLET */
 @media screen and (min-width: 481px) {
 
+    
 }
 
 /* SMALL SCREEN */
@@ -176,6 +177,7 @@
     .latest_post h1{
         margin-top: 0px;
     }
+
     .mySlides {
         border-right: 1px solid black;
         padding-right: 15px;
@@ -251,6 +253,7 @@
 
     /* LAST POST */
 
+    
     .new-content_img {
         width: 700px;
         height: 466px;

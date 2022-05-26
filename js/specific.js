@@ -37,7 +37,7 @@ async function getContent() {
                                         <img class="main_img_slide" src="/img/lemon.jpeg" alt="" /> 
                                         <img class="main_img_slide" src="/img/herbs.jpeg" alt="" />
                                         <img class="main_img_slide" src="/img/salmon.jpeg" alt="" />
-                                    </div>
+                                </div>
                             `
         blogIngredient.innerHTML += `                              
 									<p>${blogIngredientText}</p>								
