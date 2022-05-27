@@ -34,9 +34,7 @@ async function getContent() {
         blogImg.innerHTML += `
                                 <img class="main_img_1" src="${blogImgs}" alt="${altText} />
                                     <div class="main_img_thumb">
-                                        <img class="main_img_slide" src="/img/lemon.jpeg" alt="" /> 
-                                        <img class="main_img_slide" src="/img/herbs.jpeg" alt="" />
-                                        <img class="main_img_slide" src="/img/salmon.jpeg" alt="" />
+                                        
                                 </div>
                             `
         blogIngredient.innerHTML += `                              

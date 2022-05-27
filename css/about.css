@@ -34,7 +34,22 @@
     text-align: center;
 }
 
-@media screen and (min-width: 767px) {
+/* TABLET */
+
+@media screen and (min-width: 481px) {
+    .herobanner img {
+        width: 600px;
+    }
+
+    .flexbox img{
+        width: 200px;
+        height: 272px;
+    }
+}
+
+/* SMALL SCREEN*/
+
+@media screen and (min-width: 769px) {
     .herobanner img {
         width: 100%;
     }
@@ -51,12 +66,21 @@
     }
 
     .flexbox img {
-        width: 224px;
+        width: 190px;
         height: 280px;
         margin: 10px 0 10px 0;
     }
 
     .main_content p {
         margin: 50px 0 50px 0;
+    }
+}
+
+/* BIG SCREEN*/
+
+@media screen and (min-width: 1025px) {
+
+    .flexbox img {
+        width: 224px;
     }
 }

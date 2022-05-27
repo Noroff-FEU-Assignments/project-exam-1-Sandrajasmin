@@ -128,8 +128,14 @@
 
 /* TABLET */
 @media screen and (min-width: 481px) {
+    .new-content_img {
+        width: 600px;
+        margin-top: 20px;
+    }    
 
-    
+    #wrapper_carousel, .outline_2, .about_content-img {
+        width:600px;
+    }
 }
 
 /* SMALL SCREEN */
@@ -161,7 +167,7 @@
     }
 
     .about_slogan {
-        padding-top: 16px;
+        padding-top: 18px;
     }
 
     .about_outline {
@@ -256,7 +262,7 @@
     
     .new-content_img {
         width: 700px;
-        height: 466px;
+        height: 452px;
         object-fit: cover;
     }
 
@@ -267,13 +273,17 @@
     /* ABOUT */
 
     .about_slogan-text {
-        margin: 9.3px 0 0 0;
+        margin: 24px 0 0 0;
     }
 
     .about_content-img {
         margin: auto;
         margin-top: 20px;
         width: 468px;
+    }
+
+    .about_content {
+        height: 539px;
     }
 
     .about_content p {
