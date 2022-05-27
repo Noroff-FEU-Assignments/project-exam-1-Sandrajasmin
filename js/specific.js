@@ -9,7 +9,7 @@ const params = new URLSearchParams(queryString);
 const id = (params.get("id"));
 //console.log(id);
 
-let APIurl = `https://greenskitchen-afd1b0.ingress-daribow.easywp.com/wp-json/wp/v2/posts/${id}`;
+let APIurl = `https://greenskitchen-afd1b0.ingress-daribow.ewp.live/wp-json/wp/v2/posts/${id}`;
 console.log(APIurl);
 
 const blogTitle = document.querySelector(".title")

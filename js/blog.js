@@ -32,7 +32,7 @@ async function getBlogPosts() {
 getBlogPosts();
 
 const loadExtra =document.getElementById("cta_button_id");
-const APIextra = "https://greenskitchen-afd1b0.ingress-daribow.easywp.com/wp-json/wp/v2/posts?per_page=2&offset=10"
+const APIextra = "https://greenskitchen-afd1b0.ingress-daribow.ewp.live//wp-json/wp/v2/posts?per_page=2&offset=10"
 
 async function getMorePosts () {
   try {

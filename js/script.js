@@ -1,4 +1,4 @@
-const APIurl = "https://greenskitchen-afd1b0.ingress-daribow.easywp.com/wp-json/wp/v2/posts?date"
+const APIurl = "https://greenskitchen-afd1b0.ingress-daribow.ewp.live//wp-json/wp/v2/posts?date"
 
 const lastPost = document.querySelector(".last-post")
 const moreContent = document.querySelector(".carousel_content")
