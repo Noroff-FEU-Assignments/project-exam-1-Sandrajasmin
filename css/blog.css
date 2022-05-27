@@ -1,5 +1,14 @@
 @import url(/css/import/header.css);
 
+/* MODAL */
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+}
+
+/*CONTENT*/
 .main_content {
     border-top: 1px solid black;
     padding-top: 20px;
@@ -32,12 +41,6 @@
     width: 145px;
 }
 
-.content_text {
-    opacity: 0;
-    width: 145px;
-    height: 0px;
-}
-
 .cta_button {
     background-color: #7cea83;
     border: none;
@@ -47,6 +50,12 @@
     margin-bottom: 20px;
     color: white;
     text-align: start;
+}
+
+.content_text {
+    display: none;
+    width: 145px;
+    height: 0px;
 }
 
 @media screen and (min-width: 481px) {
@@ -63,9 +72,20 @@
     .content_title, .content_text {
         width: 160px;
     }
+
+    .content_text {
+        display: none;
+        width: 145px;
+        height: 0px;
+    }
 }
 
 @media screen and (min-width: 769px) {
+    .content_text {
+        display: block;
+        width: 145px;
+        height: 0px;
+    }
 
     h1 {
         margin-top: 0px;

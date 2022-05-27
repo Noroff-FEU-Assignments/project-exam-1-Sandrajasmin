@@ -1,4 +1,4 @@
-const APIurl = "https://greenskitchen-afd1b0.ingress-daribow.ewp.live//wp-json/wp/v2/posts?date"
+const APIurl = "https://greenskitchen-afd1b0.ingress-daribow.ewp.live/wp-json/wp/v2/posts?date"
 
 const lastPost = document.querySelector(".last-post")
 const moreContent = document.querySelector(".carousel_content")
@@ -90,20 +90,19 @@ async function getPosts() {
         }
 
         lastPost.innerHTML += `
-        <h1 class="latest_post">Most Read Post</h1>
-        <a href="specific.html?id=${myPostsArr[9].id}">
-          <h2>${myPostsArr[9].title.rendered}</h2>
-           <p class="new-content_intro">${myPostsArr[9].x_metadata.intro}</p>
-        </a>
-        <div class="outline_1">
-        <img class="new-content_img" src="${myPostsArr[9].x_featured_media_large}" alt="${myPostsArr[9].x_metadata.alt_text}">
-        <div class="new-content_cta">
-          <a href="specific.html?id=${myPostsArr[9].id}">
-              <p>TO THE RECIPE > > ></p> 
-          </a>
-        </div>									
-
-            `
+                            <h1 class="latest_post">Most Read Post</h1>
+                            <a href="specific.html?id=${myPostsArr[9].id}">
+                            <h2>${myPostsArr[9].title.rendered}</h2>
+                            <p class="new-content_intro">${myPostsArr[9].x_metadata.intro}</p>
+                            </a>
+                            <div class="outline_1">
+                            <img class="new-content_img" src="${myPostsArr[9].x_featured_media_large}" alt="${myPostsArr[9].x_metadata.alt_text}">
+                            <div class="new-content_cta">
+                            <a href="specific.html?id=${myPostsArr[9].id}">
+                                <p>TO THE RECIPE > > ></p> 
+                            </a>
+                            </div>									
+                            `
     }
     catch (error) {
         console.log(error);
@@ -140,3 +139,4 @@ prev.addEventListener("click", (e) => {
 
 let width = carousel.offsetWidth;
 window.addEventListener("resize", (e) => (width = carousel.offsetWidth));
+

@@ -203,7 +203,6 @@ a:active {
 }
 
 /* TABLET */
-
 @media screen and (min-width: 481px) { 
   .inner {
       width: 600px;
@@ -211,7 +210,6 @@ a:active {
 }
 
 /* SMALL SCREEN*/
-
 @media screen and (min-width: 769px) {
   .inner {
     margin: 0% auto;
@@ -265,7 +263,6 @@ a:active {
 }
 
 /* BIG SCREEN*/
-
 @media screen and (min-width: 1025px) {
   .inner {
     margin: 0% auto;
