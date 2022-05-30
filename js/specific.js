@@ -43,31 +43,31 @@ async function getContent() {
                                         <h2>QUINOA</h2>
                                         <div class="ingredient_checkbox">
                                             <input type="checkbox" id="ingredient_box" name="ingredient_box" value="food">
-                                            <label class="box" for="ingredient_box">${blogContent.x_metadata.one}</label><br>
+                                            <label class="box" for="ingredient_box" aria-label="check-box">${blogContent.x_metadata.one}</label><br>
                                         </div>
                                         <div class="ingredient_checkbox">
                                             <input type="checkbox" id="ingredient_box" name="ingredient_box" value="food">
-                                            <label class="box" for="ingredient_box">${blogContent.x_metadata.two}</label><br>
+                                            <label class="box" for="ingredient_box" aria-label="check-box">${blogContent.x_metadata.two}</label><br>
                                         </div>
                                         <div class="ingredient_checkbox">
                                             <input type="checkbox" id="ingredient_box" name="ingredient_box" value="food">
-                                            <label class="box" for="ingredient_box">${blogContent.acf.three}</label><br>
+                                            <label class="box" for="ingredient_box" aria-label="check-box">${blogContent.acf.three}</label><br>
                                         </div>
                                         <div class="ingredient_checkbox">
                                             <input type="checkbox" id="ingredient_box" name="ingredient_box" value="food">
-                                            <label class="box" for="ingredient_box">${blogContent.acf.four}</label><br>
+                                            <label class="box" for="ingredient_box" aria-label="check-box">${blogContent.acf.four}</label><br>
                                         </div>
                                         <div class="ingredient_checkbox">
                                             <input type="checkbox" id="ingredient_box" name="ingredient_box" value="food">
-                                            <label class="box" for="ingredient_box">${blogContent.acf.five}</label><br>
+                                            <label class="box" for="ingredient_box" aria-label="check-box">${blogContent.acf.five}</label><br>
                                         </div>
                                         <div class="ingredient_checkbox">
                                             <input type="checkbox" id="ingredient_box" name="ingredient_box" value="food">
-                                            <label class="box" for="ingredient_box">${blogContent.acf.six}</label><br>
+                                            <label class="box" for="ingredient_box" aria-label="check-box">${blogContent.acf.six}</label><br>
                                         </div>
                                         <div class="ingredient_checkbox">
                                             <input type="checkbox" id="ingredient_box" name="ingredient_box" value="food">
-                                            <label class="box" for="ingredient_box">${blogContent.acf.seven}</label><br>
+                                            <label class="box" for="ingredient_box" aria-label="check-box">${blogContent.acf.seven}</label><br>
                                         </div>
                                         <h2>SALMON</h2>
                                         <div class="ingredient_checkbox">
@@ -106,8 +106,7 @@ async function getContent() {
         `;
         modal.innerHTML += `
                             <img class="full_img" src="${blogImgs}" alt="${altText} />
-                            <div class="main_img_thumb">
-                                </div>
+                            <div class="main_img_thumb"></div>
                             <p>${blogTitleText}</p>
         `;
         document.title = `${blogTitleText}`;

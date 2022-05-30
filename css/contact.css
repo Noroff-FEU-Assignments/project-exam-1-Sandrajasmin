@@ -47,7 +47,7 @@ textarea {
 input[type='submit'] {
     font-family: 'Fira Sans Extra Condensed', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 29px;
-    background-color: #89D38E;
+    background-color: #69ba6f;
     padding: 8px 20px;
     border: none;
     border-radius: 10px;
@@ -64,7 +64,7 @@ input[type='submit'] {
 }
 
 .input-Control.success input {
-    border-color: darkseagreen;
+    border-color: #69ba6f;
 }
 
 .input-Control.error input {

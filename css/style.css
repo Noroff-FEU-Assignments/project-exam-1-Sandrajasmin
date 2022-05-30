@@ -24,12 +24,8 @@
     margin-bottom: 20px;
 }
 
-.new-content_cta a:hover {
-    color: black;
-}
-
 .new-content_cta a {
-    color: white;
+    color: black;
     display: flex;
     margin-left: 10px;
 }
