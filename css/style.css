@@ -13,6 +13,7 @@
 
 .new-content_img {
     width: 300px;
+    height: 330px;
     margin-top: 20px;
 }
 
@@ -45,7 +46,6 @@
     overflow: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    height: 400px;
 }
 
 #carousel::-webkit-scrollbar {
@@ -81,17 +81,21 @@
     transform: translate(-50%, 80%);
 }
 
+.item {
+    width: 224px;
+    height: 250px;
+}
+
 .carousel_content {
     display: flex;
     width: 400px;
-    height: 350px;
     margin: 0 0 20px 38px;
     display: flex;
     gap: 10px;
 }
 
 .mySlides, .mySlides a {
-    height: 400px;
+    height: 450px;
 }
 
 /* ABOUT */
@@ -109,6 +113,7 @@
 
 .about_content-img {
     width: 300px;
+    height: 124px;
 }
 
 .about_content h2 {
@@ -124,6 +129,10 @@
 
     #wrapper_carousel, .outline_2, .about_content-img {
         width:600px;
+    }
+
+    .about_content-img {
+        height: 248px;
     }
 }
 
@@ -156,7 +165,7 @@
     }
 
     .about_slogan {
-        padding-top: 18px;
+        padding-top: 16px;
     }
 
     .about_outline {
@@ -176,7 +185,7 @@
     .mySlides {
         border-right: 1px solid black;
         padding-right: 15px;
-        height: 400px;
+        height: 440px;
     }
 
     .new-content_img {
@@ -244,6 +253,10 @@
     .about_slogan,
     .about_content {
         width: 490px;
+    }
+
+    .about_slogan {
+        padding-top: 18px;
     }
 
     /* LAST POST */
