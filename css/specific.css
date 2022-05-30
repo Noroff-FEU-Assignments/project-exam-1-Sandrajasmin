@@ -217,4 +217,9 @@
         width: 466px;
         margin-left: 10px;
     }
+
+    .ingredient_check {
+        width: 400px;
+        margin-bottom: 38px;
+    }
 }

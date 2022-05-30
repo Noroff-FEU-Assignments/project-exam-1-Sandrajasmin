@@ -19,8 +19,9 @@ async function getPosts() {
                                     <a href="specific.html?id=${myPostsArr[0].id}"> 
                                         <img class="item" src="${myPostsArr[0].x_featured_media_large}" alt="${myPostsArr[0].x_metadata.alt_text}> 
                                         <div class="text">
-                                        <h2>${myPostsArr[0].title.rendered}</h2>
-                                        <p>${myPostsArr[0].x_metadata.intro}</p></div>
+                                            <h2>${myPostsArr[0].title.rendered}</h2>
+                                            <p>${myPostsArr[0].x_metadata.intro}</p>
+                                        </div>
                                     </a>
                                 </div>
 
@@ -92,15 +93,16 @@ async function getPosts() {
         lastPost.innerHTML += `
                             <h1 class="latest_post">Most Read Post</h1>
                             <a href="specific.html?id=${myPostsArr[9].id}">
-                            <h2>${myPostsArr[9].title.rendered}</h2>
-                            <p class="new-content_intro">${myPostsArr[9].x_metadata.intro}</p>
+                                <h2>${myPostsArr[9].title.rendered}</h2>
+                                <p class="new-content_intro">${myPostsArr[9].x_metadata.intro}</p>
                             </a>
                             <div class="outline_1">
-                            <img class="new-content_img" src="${myPostsArr[9].x_featured_media_large}" alt="${myPostsArr[9].x_metadata.alt_text}">
-                            <div class="new-content_cta">
-                            <a href="specific.html?id=${myPostsArr[9].id}">
-                                <p>TO THE RECIPE > > ></p> 
-                            </a>
+                                <img class="new-content_img" src="${myPostsArr[9].x_featured_media_large}" alt="${myPostsArr[9].x_metadata.alt_text}">
+                                <div class="new-content_cta">
+                                    <a href="specific.html?id=${myPostsArr[9].id}">
+                                        <p>TO THE RECIPE > > ></p> 
+                                    </a>
+                                </div>
                             </div>									
                             `
     }
