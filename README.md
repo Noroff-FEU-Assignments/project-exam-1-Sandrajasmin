@@ -3,7 +3,7 @@
 
 # PROJECT EXAM 1 - "GREEN´S KICTHEN"
 
-![This is an image](https://adoring-tereshkova-b5c907.netlify.app/images/Screenshot.png)
+![This is an image](https://luxury-horse-8cdd63.netlify.app/img/screenshot.png)
 
 A simple overview of the use/purpose of the project.
 +
